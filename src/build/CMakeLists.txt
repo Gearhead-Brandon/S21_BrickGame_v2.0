@@ -7,8 +7,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 set(CMAKE_CXX_COMPILER "/usr/bin/gcc")
 
-# set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -lstdc++ -Wall -Werror -Wextra -lncursesw") 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -lstdc++ -lncursesw") 
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -lstdc++ -Wall -Werror -Wextra -lncursesw") 
 
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
@@ -47,7 +46,6 @@ find_package(Qt6 REQUIRED COMPONENTS Core Gui Widgets)
 
 file(GLOB_RECURSE SOURCE_FILES
     "../main.cpp"
-    "../brick_game.h"
     "../brick_game/**/**/*.c"
     "../brick_game/**/**/*.cpp"
     "../gui/**/*.c"
